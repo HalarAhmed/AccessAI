@@ -1,0 +1,83 @@
+/* AccessAI Injected Styles */
+.accessai-caption-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  z-index: 999999;
+  pointer-events: none;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.accessai-alt-text {
+  background-color: #e0f7fa;
+  color: #006064;
+  border-left: 4px solid #00acc1;
+  padding: 8px;
+  margin-top: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  display: block;
+  border-radius: 4px;
+}
+
+.accessai-simplified-text {
+  background-color: #f3e5f5;
+  color: #4a148c;
+  border-left: 4px solid #ab47bc;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+}
+/* Dyslexia Mode Styles */
+.accessai-dyslexia-mode p, 
+.accessai-dyslexia-mode h1, 
+.accessai-dyslexia-mode h2, 
+.accessai-dyslexia-mode h3, 
+.accessai-dyslexia-mode h4, 
+.accessai-dyslexia-mode h5, 
+.accessai-dyslexia-mode h6, 
+.accessai-dyslexia-mode li, 
+.accessai-dyslexia-mode span, 
+.accessai-dyslexia-mode div, 
+.accessai-dyslexia-mode a {
+  font-family: 'Comic Sans MS', 'OpenDyslexic', 'Arial', sans-serif !important;
+  font-size: 115% !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.1em !important;
+}
+
+/* Floating Play Button for Selection */
+#accessai-selection-btn {
+  position: absolute;
+  z-index: 100000;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s;
+}
+
+#accessai-selection-btn:hover {
+  transform: scale(1.05);
+  background-color: #1976D2;
+}

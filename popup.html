@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <img src="icons/icon48.png" alt="Logo" class="logo">
+    <h1>AccessAI</h1>
+  </div>
+  
+  <div class="section">
+    <h2>Accessibility Features</h2>
+    
+    <label class="toggle">
+      <span class="toggle-label">Image Descriptions (AI)</span>
+      <input type="checkbox" id="toggle-image-desc" checked>
+      <span class="slider"></span>
+    </label>
+
+    <label class="toggle">
+      <span class="toggle-label">Video Captions</span>
+      <input type="checkbox" id="toggle-captions" checked>
+      <span class="slider"></span>
+    </label>
+
+    <label class="toggle">
+      <span class="toggle-label">Simplify Text</span>
+      <input type="checkbox" id="toggle-simplify" checked>
+      <span class="slider"></span>
+    </label>
+    
+    <label class="toggle">
+      <span class="toggle-label">Read Aloud (Selection)</span>
+      <input type="checkbox" id="toggle-read" checked>
+      <span class="slider"></span>
+    </label>
+    
+    <label class="toggle">
+      <span class="toggle-label">Dyslexia Mode (Formatting)</span>
+      <input type="checkbox" id="toggle-dyslexia">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="actions">
+    <button id="btn-options" class="btn-secondary">⚙️ Settings</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="options.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>AccessAI Settings</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icons/icon48.png" alt="Logo" class="logo">
+      <h1>AccessAI Settings</h1>
+    </div>
+
+    <div class="card">
+      <h2>API Configuration</h2>
+      <p class="description">Enter your API keys to enable AI features. Keys are stored locally on your device.</p>
+      
+      <div class="form-group">
+        <label for="gemini-key">Gemini API Key (For Image Descriptions & Simplification)</label>
+        <input type="password" id="gemini-key" placeholder="AIzaSy...">
+      </div>
+
+      <div class="form-group">
+        <label for="deepgram-key">Deepgram API Key (For Premium Text-to-Speech)</label>
+        <input type="password" id="deepgram-key" placeholder="Token...">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Text-to-Speech Preferences</h2>
+      
+      <div class="form-group">
+        <label for="tts-voice">Preferred Voice</label>
+        <select id="tts-voice">
+          <optgroup label="Free Chrome Voices (No Key Required)">
+            <option value="chrome-en-US">English (US) - Default</option>
+            <option value="chrome-en-GB">English (UK) - Default</option>
+          </optgroup>
+          <optgroup label="Deepgram Premium Voices (API Key Required)">
+            <option value="deepgram-aura-asteria-en">Aura Asteria (Female)</option>
+            <option value="deepgram-aura-luna-en">Aura Luna (Female)</option>
+            <option value="deepgram-aura-orion-en">Aura Orion (Male)</option>
+            <option value="deepgram-aura-arcas-en">Aura Arcas (Male)</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tts-speed">Speech Speed: <span id="speed-val">1.0</span>x</label>
+        <input type="range" id="tts-speed" min="0.5" max="2.0" step="0.1" value="1.0">
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="btn-save" class="btn-primary">Save Settings</button>
+      <span id="save-status" class="status-msg"></span>
+    </div>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
